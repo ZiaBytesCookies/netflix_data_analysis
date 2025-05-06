@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zia's Data Analyst Portfolio</title>
+  <title>Zia's Data Analyst & AI Portfolio</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
@@ -45,17 +45,23 @@
       z-index: 1;
     }
 
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      z-index: 1;
+    }
+
     .card {
       background: rgba(255, 255, 255, 0.05);
       padding: 30px;
       border-radius: 15px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-      margin: 20px;
       width: 90%;
-      max-width: 600px;
+      max-width: 360px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       backdrop-filter: blur(10px);
-      z-index: 1;
     }
 
     .card:hover {
@@ -65,6 +71,7 @@
 
     h2 {
       color: #d8b4fe;
+      margin-bottom: 12px;
     }
 
     ul {
@@ -114,19 +121,29 @@
 </head>
 <body>
 
-  <!-- tsParticles canvas -->
   <div id="tsparticles"></div>
 
-  <h1>Welcome to My Data Analyst Portfolio!</h1>
-  <p>Hi, I'm Zia. I analyze data to help businesses make smarter decisions by uncovering insights from complex datasets.</p>
+  <h1>Welcome to My Data Analyst & AI Portfolio!</h1>
+  <p>Hi, I'm Zia. I analyze data to help businesses make smarter decisions—and I build AI/ML projects that push the envelope.</p>
 
-  <div class="card">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/analyzia/netflix-data-analysis" target="_blank">Netflix Content Analysis</a></li>
-      <li><a href="https://github.com/analyzia/covid-sql-analysis" target="_blank">COVID-19 SQL Analysis</a></li>
-      <li><a href="https://public.tableau.com/app/profile/YOUR-TABLEAU-ID/viz/SuperstoreDashboard" target="_blank">Superstore Sales Dashboard</a></li>
-    </ul>
+  <div class="cards">
+    <div class="card">
+      <h2>Data Analysis Projects</h2>
+      <ul>
+        <li><a href="https://github.com/analyzia/netflix-data-analysis" target="_blank">Netflix Content Analysis</a></li>
+        <li><a href="https://github.com/analyzia/covid-sql-analysis" target="_blank">COVID-19 SQL Analysis</a></li>
+        <li><a href="https://public.tableau.com/app/profile/YOUR-TABLEAU-ID/viz/SuperstoreDashboard" target="_blank">Superstore Sales Dashboard</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>AI & Machine Learning Projects</h2>
+      <ul>
+        <li><a href="#" target="_blank">Sentiment Analysis with Python (NLTK & scikit-learn)</a></li>
+        <li><a href="#" target="_blank">Image Classification using TensorFlow</a></li>
+        <li><a href="#" target="_blank">Chatbot built on GPT-3 API</a></li>
+      </ul>
+    </div>
   </div>
 
   <div class="card">
@@ -140,13 +157,10 @@
     © 2025 Zia. All rights reserved.
   </footer>
 
-  <!-- tsParticles bundle (with all interaction plugins) -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
   <script>
     tsParticles.load("tsparticles", {
-      background: {
-        color: { value: "transparent" }
-      },
+      background: { color: { value: "transparent" } },
       fpsLimit: 60,
       interactivity: {
         events: {
@@ -168,7 +182,6 @@
           opacity: 0.5,
           width: 1
         },
-        collisions: { enable: false },
         move: {
           enable: true,
           speed: 1,
@@ -185,5 +198,6 @@
       detectRetina: true
     });
   </script>
+
 </body>
 </html>
