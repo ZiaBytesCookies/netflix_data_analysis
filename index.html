@@ -1,212 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zia's Data Analyst Portfolio</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zia's Data Analyst Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: black;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            color: #e0d5ff;
-            position: relative;
-            z-index: 1;
-        }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: black;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      color: #e0d5ff;
+      position: relative;
+      z-index: 1;
+    }
 
-        #tsparticles {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-        }
+    #tsparticles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
 
-        h1 {
-            margin-top: 30px;
-            color: #c084fc;
-            text-align: center;
-            z-index: 1;
-        }
+    h1 {
+      margin-top: 30px;
+      color: #c084fc;
+      text-align: center;
+      z-index: 1;
+    }
 
-        p {
-            text-align: center;
-            max-width: 600px;
-            margin-bottom: 40px;
-            font-size: 18px;
-            z-index: 1;
-        }
+    p {
+      text-align: center;
+      max-width: 600px;
+      margin-bottom: 40px;
+      font-size: 18px;
+      z-index: 1;
+    }
 
-        .card {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-            margin: 20px;
-            width: 90%;
-            max-width: 600px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            backdrop-filter: blur(10px);
-            z-index: 1;
-        }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      margin: 20px;
+      width: 90%;
+      max-width: 600px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      backdrop-filter: blur(10px);
+      z-index: 1;
+    }
 
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.6);
-        }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.6);
+    }
 
-        h2 {
-            color: #d8b4fe;
-        }
+    h2 {
+      color: #d8b4fe;
+    }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
 
-        ul li {
-            margin: 12px 0;
-        }
+    ul li {
+      margin: 12px 0;
+    }
 
-        a {
-            color: #a78bfa;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
+    a {
+      color: #a78bfa;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
 
-        a:hover {
-            color: #f0abfc;
-            text-decoration: underline;
-        }
+    a:hover {
+      color: #f0abfc;
+      text-decoration: underline;
+    }
 
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 14px;
-            color: #aaa;
-            z-index: 1;
-        }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #aaa;
+      z-index: 1;
+    }
 
-        .button {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background: #9333ea;
-            color: white;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #9333ea;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
 
-        .button:hover {
-            background: #6b21a8;
-        }
-    </style>
+    .button:hover {
+      background: #6b21a8;
+    }
+  </style>
 </head>
 <body>
 
-    <div id="tsparticles"></div>
+  <div id="tsparticles"></div>
 
-    <h1>Welcome to My Data Analyst Portfolio!</h1>
-    <p>Hi, I'm Zia. I analyze data to help businesses make smarter decisions by uncovering insights from complex datasets.</p>
+  <h1>Welcome to My Data Analyst Portfolio!</h1>
+  <p>Hi, I'm Zia. I analyze data to help businesses make smarter decisions by uncovering insights from complex datasets.</p>
 
-    <div class="card">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/analyzia/netflix-data-analysis" target="_blank">Netflix Content Analysis</a></li>
-            <li><a href="https://github.com/analyzia/covid-sql-analysis" target="_blank">COVID-19 SQL Analysis</a></li>
-            <li><a href="https://public.tableau.com/app/profile/YOUR-TABLEAU-ID/viz/SuperstoreDashboard" target="_blank">Superstore Sales Dashboard</a></li>
-        </ul>
-    </div>
+  <div class="card">
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="https://github.com/analyzia/netflix-data-analysis" target="_blank">Netflix Content Analysis</a></li>
+      <li><a href="https://github.com/analyzia/covid-sql-analysis" target="_blank">COVID-19 SQL Analysis</a></li>
+      <li><a href="https://public.tableau.com/app/profile/YOUR-TABLEAU-ID/viz/SuperstoreDashboard" target="_blank">Superstore Sales Dashboard</a></li>
+    </ul>
+  </div>
 
-    <div class="card">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:tasnimzia98@gmail.com">tasnimzia98@gmail.com</a></p>
-        <a href="https://www.linkedin.com/in/tasnim-zia-proma/" class="button" target="_blank">LinkedIn</a>
-        <a href="https://github.com/ZiaBytesCookies" class="button" target="_blank">GitHub</a>
-    </div>
+  <div class="card">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:tasnimzia98@gmail.com">tasnimzia98@gmail.com</a></p>
+    <a href="https://www.linkedin.com/in/tasnim-zia-proma/" class="button" target="_blank">LinkedIn</a>
+    <a href="https://github.com/ZiaBytesCookies" class="button" target="_blank">GitHub</a>
+  </div>
 
-    <footer>
-        © 2025 Zia. All rights reserved.
-    </footer>
+  <footer>
+    © 2025 Zia. All rights reserved.
+  </footer>
 
-    <!-- tsParticles library -->
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.3.0/tsparticles.bundle.min.js"></script>
-    <script>
-        tsParticles.load("tsparticles", {
-            background: {
-                color: {
-                    value: "#000"
-                }
-            },
-            fpsLimit: 60,
-            interactivity: {
-                events: {
-                    onHover: {
-                        enable: true,
-                        mode: "repulse"
-                    },
-                    resize: true
-                },
-                modes: {
-                    repulse: {
-                        distance: 100,
-                        duration: 0.4
-                    }
-                }
-            },
-            particles: {
-                color: {
-                    value: "#c084fc"
-                },
-                links: {
-                    color: "#d8b4fe",
-                    distance: 150,
-                    enable: true,
-                    opacity: 0.5,
-                    width: 1
-                },
-                collisions: {
-                    enable: false
-                },
-                move: {
-                    direction: "none",
-                    enable: true,
-                    outModes: {
-                        default: "bounce"
-                    },
-                    random: false,
-                    speed: 1,
-                    straight: false
-                },
-                number: {
-                    density: {
-                        enable: true,
-                        area: 800
-                    },
-                    value: 80
-                },
-                opacity: {
-                    value: 0.5
-                },
-                shape: {
-                    type: "circle"
-                },
-                size: {
-                    value: { min: 1, max: 5 }
-                }
-            },
-            detectRetina: true
-        });
-    </script>
+  <!-- tsParticles v2.11.1 - Stable version -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.min.js"></script>
+  <script>
+    tsParticles.load("tsparticles", {
+      background: {
+        color: {
+          value: "#000000"
+        }
+      },
+      fpsLimit: 60,
+      interactivity: {
+        events: {
+          onHover: {
+            enable: true,
+            mode: "repulse"
+          },
+          resize: true
+        },
+        modes: {
+          repulse: {
+            distance: 100,
+            duration: 0.4
+          }
+        }
+      },
+      particles: {
+        color: {
+          value: "#c084fc"
+        },
+        links: {
+          color: "#d8b4fe",
+          distance: 150,
+          enable: true,
+          opacity: 0.5,
+          width: 1
+        },
+        collisions: {
+          enable: false
+        },
+        move: {
+          direction: "none",
+          enable: true,
+          outModes: {
+            default: "bounce"
+          },
+          random: false,
+          speed: 1,
+          straight: false
+        },
+        number: {
+          density: {
+            enable: true,
+            area: 800
+          },
+          value: 80
+        },
+        opacity: {
+          value: 0.5
+        },
+        shape: {
+          type: "circle"
+        },
+        size: {
+          value: { min: 1, max: 5 }
+        }
+      },
+      detectRetina: true
+    });
+  </script>
 </body>
 </html>
